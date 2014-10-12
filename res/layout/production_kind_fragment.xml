@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:baselineAligned="false"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/line" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+
+        <ScrollView
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:background="@color/left_color"
+            android:fadeScrollbars="true"
+            android:overScrollMode="never"
+            android:scrollbarFadeDuration="300"
+            android:scrollbarSize="3dp"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="none" >
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:scrollbars="none" >
+
+                <RadioButton
+                    android:id="@+id/chuxingyongpin_radioBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_radio_btn_ch"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:paddingBottom="3dp"
+                    android:paddingTop="3dp"
+                    android:text="@string/chuxingyongpin"
+                    android:textColor="@drawable/text_choosed_color"
+                    android:textSize="@dimen/text_size_big" />
+
+                <RadioButton
+                    android:id="@+id/richangyongpin_radioBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_radio_btn_ch"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:paddingBottom="3dp"
+                    android:paddingTop="3dp"
+                    android:text="@string/richangyongpin"
+                    android:textColor="@drawable/text_choosed_color"
+                    android:textSize="@dimen/text_size_big" />
+
+                <RadioButton
+                    android:id="@+id/gougoushipin_radioBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_radio_btn_ch"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:paddingBottom="3dp"
+                    android:paddingTop="3dp"
+                    android:text="@string/gougoushipin"
+                    android:textColor="@drawable/text_choosed_color"
+                    android:textSize="@dimen/text_size_big" />
+
+                <RadioButton
+                    android:id="@+id/gougouwanju_radioBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_radio_btn_ch"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:paddingBottom="3dp"
+                    android:paddingTop="3dp"
+                    android:text="@string/gougouwanju"
+                    android:textColor="@drawable/text_choosed_color"
+                    android:textSize="@dimen/text_size_big" />
+
+                <RadioButton
+                    android:id="@+id/meirongqingjie_radioBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_radio_btn_ch"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:paddingBottom="3dp"
+                    android:paddingTop="3dp"
+                    android:text="@string/meirongqingjie"
+                    android:textColor="@drawable/text_choosed_color"
+                    android:textSize="@dimen/text_size_big" />
+
+                <RadioButton
+                    android:id="@+id/yingyangbaojian_radioBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_radio_btn_ch"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:paddingBottom="3dp"
+                    android:paddingTop="3dp"
+                    android:text="@string/yingyangbaojian"
+                    android:textColor="@drawable/text_choosed_color"
+                    android:textSize="@dimen/text_size_big" />
+
+                <RadioButton
+                    android:id="@+id/fuzhuangshipin_radioBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_radio_btn_ch"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:paddingBottom="3dp"
+                    android:paddingTop="3dp"
+                    android:text="@string/fuzhuangshipin"
+                    android:textColor="@drawable/text_choosed_color"
+                    android:textSize="@dimen/text_size_big" />
+
+                <RadioButton
+                    android:id="@+id/xiangquanpidai_radioBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_radio_btn_ch"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:paddingBottom="3dp"
+                    android:paddingTop="3dp"
+                    android:text="@string/xiangquanpidai"
+                    android:textColor="@drawable/text_choosed_color"
+                    android:textSize="@dimen/text_size_big" />
+            </RadioGroup>
+        </ScrollView>
+
+        <ImageView
+            android:id="@+id/shop_show_shadow_seperator"
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/shop_show_shadow" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/layout_background" >
+
+            <GridView
+                android:id="@+id/gridView_gouwu_fragment"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/layout_background"
+                android:numColumns="2"
+                android:scrollbars="none"
+                android:verticalSpacing="20dp" >
+            </GridView>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

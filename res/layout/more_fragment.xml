@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/more_gridview_background"
+    android:orientation="vertical" >
+
+    
+     <com.ant.liao.GifView
+        android:id="@+id/location_gif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        />
+     
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/location1"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/text_size_big" />
+
+    <com.chongwu.widget.CircleMenuView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="60dp"
+        android:background="@color/more_gridview_background"
+        android:fadingEdge="none"
+        android:gravity="center"
+        android:listSelector="@color/transparent"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:verticalSpacing="6dp"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_jialiu"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg002"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/radiogroup_jialiu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/btn1_jialiu"
+            style="@style/search_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:button="@null"
+            android:checked="true"
+            android:text="精品区"
+            android:textColor="#666666"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/btn2_jialiu"
+            style="@style/search_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="搞笑区"
+            android:textColor="#666666"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/btn3_jialiu"
+            style="@style/search_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="比赛区"
+            android:textColor="#666666"
+            android:textSize="20sp" />
+    </RadioGroup>
+
+<!--     <android.support.v4.view.ViewPager -->
+<!--         android:id="@+id/viewPager_jialiu" -->
+<!--         android:layout_width="match_parent" -->
+<!--         android:layout_height="match_parent"/> -->
+
+
+<com.chongwu.widget.common.InsideViewPager
+        android:id="@+id/viewPager_jialiu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

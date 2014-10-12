@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/layout_background"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_fragment" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/baidu_map"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true" />
+
+        <LinearLayout
+            android:id="@+id/map_search_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/transparent_gray3"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:visibility="gone" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1" >
+
+                <EditText
+                    android:id="@+id/map_search_in"
+                    style="@style/map_search_edittext"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:completionHint="请选择你搜索的地址"
+                    android:completionThreshold="1"
+                    android:dropDownHorizontalOffset="20dp"
+                    android:ems="10"
+                    android:hint="输入你想搜索的地址"
+                    android:paddingRight="30dp"
+                    android:singleLine="true" />
+
+                <ImageView
+                    android:id="@+id/map_search_clear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/clear_icon"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/map_search_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/search_in_btn_bg"
+                android:text="隐藏"
+                android:textColor="@color/black" 
+                android:textSize="@dimen/font_size_large"/>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/map_search_list"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/map_search_layout"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginTop="-5dp"
+            android:cacheColorHint="#00000000"
+            android:divider="@drawable/list_line2"
+            android:listSelector="@color/transparent"
+            android:visibility="gone" >
+        </ListView>
+
+        <Button
+            android:id="@+id/map_location_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/map_search_layout"
+            android:layout_margin="12dp"
+            android:background="@drawable/location_btn_bg" />
+
+        <Button
+            android:id="@+id/map_serach_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/map_location_btn"
+            android:layout_marginBottom="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/search_btn_bg" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="more_gridview_item_txt">16dp</dimen>
+    <dimen name="header_title">24dp</dimen>
+    
+    <!-- 文本大小 -->
+    <dimen name="text_size_small">13dp</dimen>
+    <dimen name="text_size_small15">15dp</dimen>
+    <dimen name="text_size_big">16sp</dimen>
+    
+    <dimen name="font_size_small">13dp</dimen>
+     <dimen name="font_size_small1">14dp</dimen>
+    <dimen name="font_size_large">16dp</dimen>
+    <dimen name="font_size_larger">17dp</dimen>
+    <dimen name="font_size_same">20dp</dimen>
+    
+    <!-- 按钮大小 -->
+    <dimen name="btn_height">40dp</dimen>
+</resources>

@@ -1,0 +1,5 @@
+1.manifest中百度定位用到的开发key
+<meta-data android:name="com.baidu.lbsapi.API_KEY" android:value="key"/> //key:开发者申请的key
+
+2.修改百度地图的key
+Config.BAIDU_MAP_KEY

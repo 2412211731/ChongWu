@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/pupop_window"
+    android:paddingBottom="7dp"
+    >
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:gravity="center_vertical"
+        >
+        
+        <ImageView 
+            android:id="@+id/window_head"
+            android:layout_width="76px"
+            android:layout_height="76px"
+            android:src="@drawable/head_icon"
+            />
+        
+        <LinearLayout 
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="-2dp"
+            >
+            
+            <TextView android:id="@+id/window_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size_small"
+                android:text="姓名"
+                />
+            
+            <TextView android:id="@+id/window_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size_small"
+                android:text="无信号"
+                />
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+
+</LinearLayout>
